@@ -9,7 +9,7 @@ export const SignupCaller = createAsyncThunk('auth/register', async (data: any) 
         console.log('Register Response: ', response?.data)
         return response?.data
     } catch (error) {
-        console.log('Register Reducer Error: ', error?.response?.data)
+        console.log('Register Reducer Error: ', error)
         return error?.response?.data
     }
 })
